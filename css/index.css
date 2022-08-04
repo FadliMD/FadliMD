@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu); 
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Handlee", sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box{
+  position: relative;
+  border-radius: 10px;
+  min-width: 225px;
+  background: rgba(255,255,255,0.7);
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  z-index: 1;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  transition: 0.5s;
+  transform: scale(1);
+}
+.box:hover{
+  transform: scale(1.02);
+  z-index: 5;
+}
+.box h1{
+  position: relative;
+  color: #333;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin: 0 80px;
+}
+.box .atmint{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  height: 30px;
+}
+.box .atmint::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background: black;
+}
+.box .atmint::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0px;
+  height: 2px;
+  background: #ad0707;
+  transition: 0.5s;
+}
+.box .atmint:hover::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background: #ad0707;
+}
+.box .atmint h2{
+  position: relative;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 2px;
+  padding-left: 0;
+  transition: 0.5s;
+}
+.box .atmint:hover h2{
+  color: #ad0707;
+}
+.box .list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  margin: 10px 0;
+}
+.box .list::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ad0707;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-radius: 10px;
+}
+.box .list .imgBx{
+  position: relative;
+  min-width: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+  border: 2px solid white;
+  box-shadow: 0 0 15px white;
+  margin-left: 10px;
+}
+.box .list .imgBx img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .list .content{
+  position: relative;
+  display: flex;
+  margin-left: 4px;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+}
+.box .rules{
+  position: relative;
+  display: flex;
+  margin-left: 4px;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+  text-align: left;
+  align-items: left;
+  padding: 10px;
+  margin: 10px 0;
+}
+.box .rules h3{
+  font-weight: 600;
+  color: black;
+  margin: 5px;
+  transition: 0.5s;
+}
+.box .rules h2{
+  font-weight: 600;
+  color: white;
+  margin: 5px;
+  transition: 0.5s;
+}
+.box .rules h4{
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin: 5px;
+  transition: 0.5s;
+}
+.box .list .content h3{
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.box .list:hover .content h3{
+  color: white;
+}
+.box .list .content p{
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.box .list:hover .content p{
+  color: white;
+  opacity: 0.7;
+}
+a{
+  background: #ad0707;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
